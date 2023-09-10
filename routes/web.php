@@ -26,3 +26,11 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+# Route::get('/auth-check', function() {
+#     if (Auth::check()) {
+#         return response()->json(['authenticated' => true], 200);
+#     } else {
+#         return response()->json(['authenticated' => false], 401);
+#     }
+# });
